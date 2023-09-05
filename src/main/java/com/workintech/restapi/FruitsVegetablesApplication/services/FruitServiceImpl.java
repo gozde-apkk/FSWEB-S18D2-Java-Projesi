@@ -40,6 +40,7 @@ public class FruitServiceImpl implements  FruitService{
 
     @Override
     public void delete(Fruit fruit) {
+
         fruitRepository.delete(fruit);
     }
 

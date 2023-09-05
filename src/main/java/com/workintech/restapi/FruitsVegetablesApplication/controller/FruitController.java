@@ -1,6 +1,7 @@
 package com.workintech.restapi.FruitsVegetablesApplication.controller;
 
 import com.workintech.restapi.FruitsVegetablesApplication.entity.Fruit;
+import com.workintech.restapi.FruitsVegetablesApplication.entity.Vegetable;
 import com.workintech.restapi.FruitsVegetablesApplication.exceptions.FruitException;
 import com.workintech.restapi.FruitsVegetablesApplication.services.FruitService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,16 @@ public class FruitController {
         }
         return fruit;
     }
+
+    @GetMapping("/desc")
+    public List<Fruit> getByPriceDesc(){
+        return fruitService.findAllPriceDesc();
+    }
+    @GetMapping("/asc")
+    public List<Fruit> getByPriceAsc(){
+        return fruitService.findAllPriceAsc();
+    }
+
 
     @PostMapping("/")
     public Fruit save(@Validated @RequestBody  Fruit fruit){
