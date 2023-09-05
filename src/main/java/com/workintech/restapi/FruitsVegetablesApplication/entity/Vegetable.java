@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "vegetable")
+@Table(name = "vegetable" , schema = "vegetables")
 public class Vegetable {
 
     @Id
@@ -28,6 +28,6 @@ public class Vegetable {
     private int price;
 
 
-    @Column(name = "isGrownOnTree")
+    @Column(name = "is_grown_on_tree")
     private boolean isGrownOnTree;
 }
