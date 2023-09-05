@@ -7,12 +7,14 @@ import com.workintech.restapi.FruitsVegetablesApplication.exceptions.FruitExcept
 import com.workintech.restapi.FruitsVegetablesApplication.services.VegetableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/vegetables")
+@Validated
 public class VegetableController {
 
     private VegetableService vegetableService;
