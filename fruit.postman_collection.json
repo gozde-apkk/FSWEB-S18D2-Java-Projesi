@@ -24,7 +24,54 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "localhost:9000/fruit/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/fruit/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"fruit",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:41:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"MELON\",\n        \"price\": 10,\n        \"fruitType\": \"SWEET\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"LE\",\n        \"price\": 4,\n        \"fruitType\": \"MINUS\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": ":9000/fruit/",
@@ -53,7 +100,63 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "localhost:9000/fruit/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"name\":\"MELON\",\r\n    \"price\": 10,\r\n    \"fruitType\": \"SWEET\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/fruit/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"fruit",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 09:26:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"MELON\",\n    \"price\": 10,\n    \"fruitType\": \"SWEET\"\n}"
+				}
+			]
 		},
 		{
 			"name": ":9000/fruit/1",
@@ -73,7 +176,54 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "localhost:9000/fruit/4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/fruit/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"fruit",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:32:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"MELON\",\n    \"price\": 10,\n    \"fruitType\": \"SWEET\"\n}"
+				}
+			]
 		},
 		{
 			"name": ":9000/fruit/APPLE",
@@ -93,7 +243,100 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": ":9000/fruit/APPLE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/fruit/APPLE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"fruit",
+								"APPLE"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 10:23:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Apple\",\n        \"price\": 5,\n        \"fruitType\": \"SOUR\"\n    }\n]"
+				},
+				{
+					"name": ":9000/fruit/MELON",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/fruit/MELON",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"fruit",
+								"MELON"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:46:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"MELON\",\n        \"price\": 10,\n        \"fruitType\": \"SWEET\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"MELON\",\n        \"price\": 10,\n        \"fruitType\": \"SWEET\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"MELON\",\n        \"price\": 10,\n        \"fruitType\": \"SWEET\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": ":9000/fruit/2",
@@ -113,7 +356,54 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "localhost:9000/fruit/6",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/fruit/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"fruit",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:47:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"name\": \"MELON\",\n    \"price\": 10,\n    \"fruitType\": \"SWEET\"\n}"
+				}
+			]
 		},
 		{
 			"name": "9000/vegetables/",
@@ -133,7 +423,54 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "9000/vegetables/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/vegetables/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"vegetables",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:48:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"TOMATO\",\n        \"price\": 6,\n        \"grownOnTree\": false\n    },\n    {\n        \"id\": 2,\n        \"name\": \"CUCUMBER\",\n        \"price\": 3,\n        \"grownOnTree\": false\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": ":9000/vegetables/",
@@ -162,7 +499,63 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": ":9000/vegetables/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"POTATOES\",\r\n    \"price\":20,\r\n    \"isGrownOnTree\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/vegetables/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"vegetables",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:49:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"POTATOES\",\n    \"price\": 20,\n    \"grownOnTree\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "9000/vegetables/asc",
@@ -182,7 +575,54 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "9000/vegetables/asc",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/vegetables/asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"vegetables",
+								"asc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:49:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"CUCUMBER\",\n        \"price\": 3,\n        \"grownOnTree\": false\n    },\n    {\n        \"id\": 1,\n        \"name\": \"TOMATO\",\n        \"price\": 6,\n        \"grownOnTree\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"POTATOES\",\n        \"price\": 20,\n        \"grownOnTree\": false\n    },\n    {\n        \"id\": 4,\n        \"name\": \"POTATOES\",\n        \"price\": 20,\n        \"grownOnTree\": false\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": ":9000/vegetables/desc",
@@ -202,7 +642,117 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": ":9000/vegetables/desc",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/vegetables/desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"vegetables",
+								"desc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:50:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"POTATOES\",\n        \"price\": 20,\n        \"grownOnTree\": false\n    },\n    {\n        \"id\": 4,\n        \"name\": \"POTATOES\",\n        \"price\": 20,\n        \"grownOnTree\": false\n    },\n    {\n        \"id\": 1,\n        \"name\": \"TOMATO\",\n        \"price\": 6,\n        \"grownOnTree\": false\n    },\n    {\n        \"id\": 2,\n        \"name\": \"CUCUMBER\",\n        \"price\": 3,\n        \"grownOnTree\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9000/fruit/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/fruit/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"fruit",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:9000/fruit/6",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/fruit/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"fruit",
+								"6"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Sep 2023 11:51:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 400,\n    \"message\": \"Fruit with given id is not exist: 6\",\n    \"timestamp\": 1693914683387\n}"
+				}
+			]
 		}
 	]
 }
